@@ -12,12 +12,19 @@ function incrementCounter(letter) {
     document.getElementById(`count-${letter}`).innerText = counters[letter];
 }
 
+function enableReset() {
+    const resetButton = document.getElementById("resetButton");
+    resetButton.disabled = false;
+}
+
 // Function to reset all counters
 function resetCounters() {
     for (let key in counters) {
         counters[key] = 0;
         document.getElementById(`count-${key}`).innerText = counters[key];
     }
+    document.getElementById("resetButton").disabled = true; // Re-disable reset button after use
+
 }
 
 // Adjust the height of the text area and font size based on content

@@ -12,7 +12,7 @@
     <div class="container">
         <!-- Text input field -->
         <!-- <input type="text" id="textInput" placeholder="Enter text here" class="text-input"> -->
-        <textarea id="textInput" placeholder="Enter text here" class="text-input" oninput="adjustTextArea()"></textarea>a
+        <textarea id="textInput" placeholder="Enter text here" class="text-input" oninput="adjustTextArea()"></textarea>
 
         <div class="button-grid">
             <!-- Buttons with car and arrows -->
@@ -69,8 +69,11 @@
                 <span id="count-extra">0</span>
             </button>
         </div>
-        <!-- Reset button -->
-        <button class="reset-btn" onclick="resetCounters()">Reset All</button>
+        <!-- Enable Reset and Reset buttons -->
+        <div class="button-controls">
+            <button class="enable-btn" onclick="enableReset()">Abilita Reset</button>
+            <button class="reset-btn" id="resetButton" onclick="resetCounters()" disabled="disabled">Reset Contatori</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

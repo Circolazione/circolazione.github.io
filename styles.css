@@ -97,17 +97,38 @@ body, html {
     margin-top: 2px;
 }
 
-.reset-btn {
-    margin-top: 20px;
-    padding: 15px 30px;
-    font-size: 1rem;
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.button-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.reset-btn:hover {
-    background-color: #c82333;
+.enable-btn,
+.reset-btn {
+    padding: 15px 0;
+    font-size: 1.2rem;
+    width: 70%;
+    max-width: 140px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-align: center;
+}
+
+.enable-btn {
+    background-color: #d31b0d;
+    color: white;
+}
+
+.reset-btn {
+    background-color: #d31b0d;
+    color: white;
+}
+
+.reset-btn:disabled {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
 }
