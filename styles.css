@@ -1,0 +1,112 @@
+/* Mobile-friendly styling */
+body, html {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* max-width: 400px; */
+}
+
+.text-input {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.monopattino-icon {
+    width: 60%; /* Adjust size as needed */
+    height: auto;
+    margin: 5px 0; /* Optional, to align vertically */
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.counter-btn {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.car {
+    background-color: #005f73;
+}
+
+.truck {
+    background-color: #ae2012;
+}
+
+.pedestrian {
+    background-color: #9e0059;
+}
+
+.bicycle {
+    background-color: #183a37;
+}
+
+.monopattino {
+    background-color: #603808;
+}
+
+.motorcycle {
+    background-color: #004b23;
+}
+
+.bus {
+    background-color: #d81159;
+}
+
+.extra {
+    background-color: #7b2cbf;
+}
+
+.counter-btn span {
+    font-size: 1.7rem;
+    margin-top: 2px;
+}
+
+.counter-btn i {
+    font-size: 1.7rem;
+    margin-top: 2px;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #c82333;
+}
